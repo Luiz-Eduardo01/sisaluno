@@ -1,0 +1,155 @@
+/* style.css */
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #007bff;
+}
+
+/* Formulário de cadastro de aluno e professor */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="date"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Tabela de listagem de alunos e professores */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #f0f0f0;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Botões de ação na tabela */
+td form {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Botão de voltar */
+.button3 {
+  margin-top: 20px;
+  background-color: #ccc;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button3 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.button3 a:hover {
+  color: #007bff;
+}
+
+/* Estilo do título da página de listagem */
+.page-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+/* Estilo das mensagens de sucesso e erro */
+.success-msg {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.error-msg {
+  color: #f44336;
+  font-weight: bold;
+}
+
+/* Estilos adicionais */
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table th {
+  white-space: nowrap;
+}
+
+.table td {
+  text-align: center;
+}
+
+.table .acao {
+  text-align: center;
+}

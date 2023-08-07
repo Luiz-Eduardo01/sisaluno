@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Escola</title>
+    <style>
+        .button-group {
+            display: flex;
+        }
+        .button-group .button {
+            margin: 5px;
+        }
+        .cadastro-buttons {
+            display: none;
+        }
+        .show-buttons {
+            display: flex;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-group">
+        <button class="button" onclick="showAluno()">Aluno</button>
+        <button class="button" onclick="showProfessor()">Professor</button>
+        <button class="button" onclick="showDisciplina()">Disciplina</button>
+    </div>
+
+    <div id="cadastro-aluno" class="cadastro-buttons show-buttons">
+        <button class="button"><a href="cadaluno.php">Cadastrar Aluno</a></button>
+        <button class="button"><a href="listaalunos.php">Lista de Alunos</a></button>
+    </div>
+
+    <div id="cadastro-professor" class="cadastro-buttons">
+        <button class="button"><a href="cadprofessor.php">Cadastrar Professor</a></button>
+        <button class="button"><a href="listaprofessores.php">Lista de Professores</a></button>
+    </div>
+
+    <div id="cadastro-disciplina" class="cadastro-buttons">
+        <button class="button"><a href="caddisciplina.php">Cadastrar Disciplina</a></button>
+        <button class="button"><a href="listadisciplinas.php">Lista de Disciplinas</a></button>
+    </div>
+
+    <script>
+        function showAluno() {
+            document.getElementById("cadastro-aluno").classList.add("show-buttons");
+            document.getElementById("cadastro-professor").classList.remove("show-buttons");
+            document.getElementById("cadastro-disciplina").classList.remove("show-buttons");
+        }
+
+        function showProfessor() {
+            document.getElementById("cadastro-aluno").classList.remove("show-buttons");
+            document.getElementById("cadastro-professor").classList.add("show-buttons");
+            document.getElementById("cadastro-disciplina").classList.remove("show-buttons");
+        }
+        function showDisciplina() {
+            document.getElementById("cadastro-aluno").classList.remove("show-buttons");
+            document.getElementById("cadastro-professor").classList.remove("show-buttons");
+            document.getElementById("cadastro-disciplina").classList.add("show-buttons");
+        }
+    </script>
+</body>
+</html>
